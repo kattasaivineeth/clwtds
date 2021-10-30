@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header {
+    border: 2px red solid;
+    padding: 1rem;
+} */
+header img {
+    width: 30px;
+    /* border: 2px black solid; */
+    margin: 0rem 1rem ;
+    border-radius: 30px;
+}
+
+header nav {
+    border: 2px black solid;
+    background-color: aqua;
+    width: 100%;
+    padding: 1rem 0rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+}
+li {
+    /* border: 2px black solid; */
+    margin: 0.5rem;
+}
+header nav .navigation {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    /* border: 2px black solid; */
+}
+
+.home {
+    /* background-color: rgb(128, 136, 136); */
+    padding: 2rem;
+}
+
+.home .bio-pic {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    padding: 2rem;
+    /* border: 2px red solid; */
+}
+
+.home img {
+    width: 70%;
+} 
+
+.home .work .work-heading h1 {
+    text-align: center;
+}
+
+.home .work .work-heading p{
+    padding: 2rem 2rem 0rem 2rem;
+    font-size: 17px;
+    /* border: 2px red solid; */
+
+}
+
+.home .work .work-heading h2 {
+    font-weight: 200;
+    padding: 0rem 1rem;
+    text-decoration: underline;
+}
+.home .work-content1 ol, .work-content2 ol, .work-content3 ol, .work-content4 ol{
+    /* border: 2px black solid; */
+    padding: 2rem;
+   
+}
+.home .work-content1 ol li, .work-content2 ol li, .work-content3 ol li, .work-content4 ol li {
+    padding: 0.5rem;
+}
+
+.home .work-content4 .extra h3{
+    padding: 1rem;
+
+}
