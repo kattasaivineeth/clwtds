@@ -16,14 +16,10 @@ header img {
 }
 
 header nav {
-    /* position: fixed; */
+    position: fixed;
     height: 80px;
-    /* margin-bottom: 20px; */
-    border: 2px black solid;
-    /* background-color: aqua; */
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(108, 122, 108, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    top:0;
+    background-color: #3A001D;
     width: 100%;
     padding: 0.6rem 0rem;
     list-style: none;
@@ -33,6 +29,7 @@ header nav {
 }
 
 header nav a  {
+    color: rgb(254, 52, 134);
     text-decoration: none;
 }
 li {
@@ -43,10 +40,8 @@ li {
 
 header nav a :hover {
     transition: all 0.5s ease;
-    padding: 1rem;
-    border-radius: 20px;
     color: #e66465;
-    background-color: #c3c5da;
+    
 }
 
 header nav .navigation {
@@ -54,7 +49,8 @@ header nav .navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* border: 2px black solid; */
+    padding: 0.4rem 1rem 0rem 0rem;
+    /* border: 2px #ffff solid; */
 }
 header nav input, header nav label {
     display: none;
@@ -64,7 +60,6 @@ header nav input, header nav label {
 
 @media (max-width:900px) {
     
-
     header nav label {
         display: block;
     }
@@ -78,9 +73,9 @@ header nav input, header nav label {
         top: 80px;
         left: -100%;
         display: block;
-        height: 100vh;
+        height: fit-content;
         padding: 2rem;
-        width: 100%;
+        width: fit-content;
         background-color: aqua;
         transition: all 0.5s ease;
     }
@@ -88,6 +83,13 @@ header nav input, header nav label {
     header nav .navigation a li {
         background-color: rgb(233, 231, 211);
         padding: 1rem;
+        border-radius: 30px;
+    }
+
+    header nav .navigation a li:hover {
+        color: rgb(17, 14, 14);
+        background-color: #b9d1c2;
+        transition: all 0.5s ease;
     }
 
     #click:checked ~ .menu-btn i:before {
@@ -107,6 +109,7 @@ home section style
 
 .home {
     /* border: 2px red solid; */
+    
     padding: 2rem;
 }
 
@@ -120,7 +123,9 @@ home section style
 }
 
 .home img {
-    width: 70%;
+    border: #0e0d0d 2px solid;
+    margin-top: 80px;
+    width: 90%;
 } 
 
 .home .work .work-heading h1 {
@@ -162,7 +167,8 @@ appreciations section style
 
 .appreciations {
     width: 100%;
-    padding-top: 1rem;
+    margin-top: 80px;
+    padding-top: 2rem;
     background: linear-gradient(#e66465, #91e5e5);
 
 }
@@ -177,7 +183,7 @@ appreciations section style
     /* border: 2px red solid; */
 }
 
-.appreciations a {
+.appreciations .up-btn a {
     text-decoration: none;
     background-color: aqua;
     padding: 1rem;
@@ -185,12 +191,13 @@ appreciations section style
 
 
 }
-.appreciations span {
+.appreciations .btn-up {
     font-size: 25px;
 }
 
 .appreciations .app {
-    /* border: 2px solid black; */
+    border: 2px solid black;
+    width: 100%;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -202,6 +209,17 @@ appreciations section style
     /* border: 2px solid black; */
 
 }
+.appreciations .app .app-pic {
+    width: 80%;
+    /* height: 5rem; */
+    /* border: #3A001D solid 3px; */
+}
+.appreciations .app .app-pic img{
+    width: 100%;
+    height: 12rem;
+}
+
+
 .appreciations .app img {
     padding: 1rem;
     width: 100%;
@@ -261,6 +279,7 @@ poster section style
 .poster {
     width: 100%;
     /* border: 2px red solid; */
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -282,7 +301,7 @@ free-register section style
 
 
 .free-register {
-
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -349,31 +368,24 @@ footer section style
 
 
 footer {
+    /* background-color: #726e6e; */
     background: linear-gradient(to left, rgb(179, 158, 158), rgb(65, 55, 55) 50%, rgb(84, 100, 100) 75%, rgb(136, 80, 80) 75%);
     color: rgb(17, 19, 18);
     padding: 1rem;
 }
 
-
-footer .abt {
-    width: 100%;
-    /* border: 2px royalblue solid; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-
-footer .tabl {
+footer .tbal0 {
     display: flex;
     justify-content: space-around;
 }
-
 
 td {
     
     padding: 1rem;
 }
+
+
+/**/
+/* .hide-4 {
+    display: none;
+} */
