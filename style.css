@@ -25,6 +25,7 @@ header nav {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    z-index: 3;
     justify-content: space-between;
 }
 
@@ -423,7 +424,7 @@ speaker section
 
 .parent:hover .child {
     opacity: 1;
-    padding:50px ;
+    padding:60px 0px 50px 40px;
     left: 50%;
     border-radius: 50%;
     width: 100%;
