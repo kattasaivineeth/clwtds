@@ -376,29 +376,73 @@ speaker section
     /* border: #0e0d0d solid 2px; */
     /* border-radius: 50px; */
 }
-.speaker .app .speaker-img .overlay {
-    display: none;
-    /* position: absolute;
-    top: 30%;
-    left: 10%;*/
-    /* display: inline; */
-    
+
+/*image overlay*/
+
+.parent {
+    /* border: 4px solid #ff0000; */
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.speaker .app .speaker-img .overlay:hover {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    display: block;
+.parent img {
+    width: 100%;
 }
+
+
+.parent {
+    position: relative;
+    /* top: 50px; */
+}
+.child {
+    /* border: 3px solid yellow; */
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    color: rgb(250, 252, 249);
+    transition: all 0.4s ease-in-out;
+}
+
+.parent::after {
+    /* border: #6dbb13 solid 4px; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+    z-index: 1;
+    transition: opecity 0.2s ease-in;
+}
+
+.parent:hover .child {
+    opacity: 1;
+    padding:50px ;
+    left: 50%;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.523);
+    
+
+}
+.parent:hover::after {
+    opacity: 1;
+}
+
+/**/
+
 .speaker .app .speaker-img img {
     width: 100%;
     border-radius: 50%;
 }
 
-/* .speaker .app .speaker-name {
-    border: #0e0d0d 2px solid;
-} */
 
 .speaker .app .speaker-bio {
     /* border: #0e0d0d 2px solid; */
@@ -411,8 +455,7 @@ speaker section
     text-decoration: none;
 }
 .speaker .app .speaker-bio button {
-    /* position: relative;
-    left:50%; */
+   
     margin-left: 50%;
     padding: 2px;
 
