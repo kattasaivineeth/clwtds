@@ -85,7 +85,9 @@ header nav input, header nav label {
         padding: 1rem;
         border-radius: 30px;
     }
-
+    header nav .menu-btn i {
+        color: #e66465;
+    }
     header nav .navigation a li:hover {
         color: rgb(17, 14, 14);
         background-color: #b9d1c2;
@@ -94,6 +96,7 @@ header nav input, header nav label {
 
     #click:checked ~ .menu-btn i:before {
         content: "\f00d";
+        color: #e66465;
     }
     #click:checked ~ .navigation {
         left: 0%;
@@ -341,12 +344,92 @@ gallery section style
     /* border: 2px black solid; */
 }
 
-/* .about-us {
+
+/*
+
+speaker section
+
+*/
+
+.speaker {
+    margin-top: 80px;
+}
+
+.speaker h1 {
+    text-transform: uppercase;
+    padding: 1rem;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+.speaker .app {
+    width: 70%;
+    /* border: #0e0d0d 2px solid; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.speaker .app .speaker-img {
+    /* position: relative; */
+    width: 12rem;
+    /* border: #0e0d0d solid 2px; */
+    /* border-radius: 50px; */
+}
+.speaker .app .speaker-img .overlay {
+    display: none;
+    /* position: absolute;
+    top: 30%;
+    left: 10%;*/
+    /* display: inline; */
+    
+}
+
+.speaker .app .speaker-img .overlay:hover {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: block;
+}
+.speaker .app .speaker-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* .speaker .app .speaker-name {
+    border: #0e0d0d 2px solid;
+} */
+
+.speaker .app .speaker-bio {
+    /* border: #0e0d0d 2px solid; */
+    width: 70%;
     padding: 2rem;
-    border: 2px red solid; 
-}*/
+    text-align: justify; 
+}
+
+.speaker .app .speaker-bio a {
+    text-decoration: none;
+}
+.speaker .app .speaker-bio button {
+    /* position: relative;
+    left:50%; */
+    margin-left: 50%;
+    padding: 2px;
+
+}
+
+@media (max-width:900px) {
+
+    .speaker .app .speaker-bio {
+       width: 100%;
+    }
+    
+}
+
+
+
+
+
 
 /* 
 
@@ -355,9 +438,19 @@ about-us section style
 */
 
 
+/* .about-us {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px red solid; 
+}*/
+
+
+
 .about-us h1 {
     padding: 2rem;
 }
+
 
 /* 
 
@@ -383,9 +476,3 @@ td {
     
     padding: 1rem;
 }
-
-
-/**/
-/* .hide-4 {
-    display: none;
-} */
