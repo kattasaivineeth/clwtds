@@ -398,13 +398,14 @@ gallery section style
     height: 100vh;
 }
 .carousel {
+    margin: 0 20rem;
     position: relative;
-    width: 200vh;
-    height: 60vh;
+    width: 800px;
 }
 .carousel-item img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 /* .about-us {
