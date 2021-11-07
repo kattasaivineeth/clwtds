@@ -396,12 +396,17 @@ speaker section
 }
 
 .parent:hover .child {
+    box-sizing: border-box;
     opacity: 1;
-    padding:60px 0px 50px 40px;
+    /* border: #9198e5 3px solid; */
+    padding-top: 3rem;
     left: 50%;
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    
+    
+    /* padding: 3rem 3rem 0rem 0rem; */
     background-color: rgba(0, 0, 0, 0.523);
     
 
@@ -410,7 +415,7 @@ speaker section
     opacity: 1;
 }
 
-/**/
+/* end overlay style*/
 
 .speaker .app .speaker-img img {
     width: 100%;
@@ -475,7 +480,6 @@ footer section style
 
 footer {
     /* background-color: #726e6e; */
-    background: linear-gradient(to left, rgb(179, 158, 158), rgb(65, 55, 55) 50%, rgb(84, 100, 100) 75%, rgb(136, 80, 80) 75%);
     color: rgb(17, 19, 18);
     padding: 1rem;
 }
