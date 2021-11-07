@@ -2,59 +2,94 @@
 <html lang="en">
 
 <head>
+    <!--===== Requird meta tags =====-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+
+    <!--===== Icon =====-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--===== Title Tag =====-->
+    <title>Speaker</title>
+
+    <!--===== CSS file link =====-->
     <link rel="stylesheet" href="style.css">
+
+    <!--===== CSS links =====-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>Speaker</title>
+
 </head>
 
-<body>
+<body class="min-vh-100 d-flex flex-column">
 
-
+    <!--===== Navigation bar =====-->
     <header>
         <nav>
-            <div class="logo"><a href="#"><img
-                        src="./images/logo.jpg" alt=""></a>
-            </div>
-
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </label>
-
-            <div class="navigation">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./appre.html">
-                    <li>Appreciations</li>
-                </a>
-                <a href="./poster.html">
-                    <li>Poster</li>
-                </a>
-
-                <a href="./speaker.html">
-                    <li>Speakers</li>
-                </a>
-
-                <a href="./appre.html#free-register">
-                    <li>Free Register</li>
-                </a>
-                <a href="./appre.html#about-dr-singh">
-                    <li>More About Dr. T. D. Singh</li>
-                </a>
-                <a href="./appre.html#gallery">
-                    <li>Gallery</li>
-                </a>
-                <a href="./appre.html#about-us">
-                    <li>About Us</li>
-                </a>
-            </div>
+            <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #3A001D;">
+                <div class="container-lg">
+                    <a class="navbar-brand text-center" target="_blank" href="https://drive.google.com/file/d/1CzF462C1I-XRlQgkVIlVhRAYlGM1me8q/view">
+                        <img src="images/logo.jpg" height="auto" class="d-inline-block align-top" id = "logo" alt="BI">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarColor03">
+                        <ul class="navbar-nav text-center ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <h5> Home </h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html">
+                                    <h5>Appreciations</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./poster.html">
+                                    <h5>Poster</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./speaker.html">
+                                    <h5>Speakers</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html#free-register">
+                                    <h5>Free Register</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html#about-dr-singh">
+                                    <h5>More about Dr. T. D. Singh</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">
+                                    <h5>Gallery</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./appre.html#about-us">
+                                    <h5>About Us</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </nav>
     </header>
+    <!--===== End Navigation bar =====-->
+    
 
     <section class="speaker ">
         <h1 align="center">Speakers</h1>
@@ -360,6 +395,8 @@
     </section>
 
     <script src="./js/script2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 
 </html>
