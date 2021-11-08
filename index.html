@@ -13,13 +13,14 @@
     <link rel="icon" href="images/favicon.ico">
 
     <!--===== Title Tag =====-->
-    <title>CLWTDS</title>
+    <title>CLWTDS-2021</title>
 
     <!--===== CSS file link =====-->
     <link rel="stylesheet" href="style.css">
     
-    <!--===== CSS links =====-->
+    <!--===== Bootstrap CSS links =====-->
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -40,9 +41,10 @@
             
                     <div class="collapse navbar-collapse" id="navbarColor03">
                         <ul class="navbar-nav text-center ml-auto">
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="index.html">
                                     <h5> Home </h5>
+                                    <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -50,16 +52,18 @@
                                     <h5>Appreciations</h5>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./poster.html">
-                                    <h5>Poster</h5>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle">
+                                    <h5 class="d-inline">Program</h5>
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./speaker.html">
-                                    <h5>Speakers</h5>
-                                </a>
-                            </li>
+                                <div class="dropdown-menu text-center py-0" aria-labelledby="navbarDropdown">
+                                    <a href="poster.html" class="dropdown-item">
+                                        <h5 class="my-1">Poster</h5>
+                                    </a>
+                                    <a href="speaker.html" class="dropdown-item">
+                                        <h5 class="my-1">Speaker</h5>
+                                    </a>
+                                </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="./appre.html#free-register">
                                     <h5>Free Register</h5>
@@ -76,7 +80,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./appre.html#about-us">
+                                <a class="nav-link" href="about-us.html">
                                     <h5>About Us</h5>
                                 </a>
                             </li>
@@ -88,6 +92,20 @@
     </header>
     <!--===== End Navigation bar =====-->
 
+    <!--===== Home introduction section =====-->
+    <section class="intro">
+        <div class="home-msg">
+             <h1>SYMPOSIUM</h1>
+             <h2>Celebrating</h2>
+             <h3>Life and Works of</h3>
+             <h4>Dr. T. D. Singh</h4>
+             <h5>(His Holiness bhaktiswarupa Damodara Swami)</h5>
+        </div>
+        <!-- <img src="./images/home.jpg" alt="home-page" class="home-img"> -->
+     </section>
+    <!--===== End Home introduction section =====-->
+
+    <!--===== Home section =====-->
     <section class="home" id="home">
         <div class="bio-pic"><img src="./images/pic-1.png" alt=""></div>
         <div class="work">
@@ -462,19 +480,21 @@
                         20 countries, spreading the philosophy of Bhagavata-Dharma.</p>
                 </div>
             </div>
-
-
         </div>
     </section>
-<!-- 
-     <section class="appreciations" id="appreciations">
-        <div class="up-btn" ><a href="" ><span>&#8593</span></a></div>
-    </section> -->
+    <!--===== Home section =====-->
 
     <!--===== JS files =====-->
     <script src="./js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+        $(".navbar .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
+
 </body>
 
 </html>

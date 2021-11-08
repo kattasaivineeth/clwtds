@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="style.css">
 
     <!--===== CSS links =====-->
-    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body class="min-vh-100 d-flex flex-column">
@@ -49,16 +53,19 @@
                                     <h5>Appreciations</h5>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./poster.html">
-                                    <h5>Poster</h5>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle">
+                                    <h5 class="d-inline">Program</h5>
+                                    <span class="sr-only">(current)</span>
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./speaker.html">
-                                    <h5>Speakers</h5>
-                                </a>
-                            </li>
+                                <div class="dropdown-menu text-center py-0" aria-labelledby="navbarDropdown">
+                                    <a href="poster.html" class="dropdown-item">
+                                        <h5 class="my-1">Poster</h5>
+                                    </a>
+                                    <a href="speaker.html" class="dropdown-item">
+                                        <h5 class="my-1">Speaker</h5>
+                                    </a>
+                                </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="./appre.html#free-register">
                                     <h5>Free Register</h5>
@@ -75,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./appre.html#about-us">
+                                <a class="nav-link" href="about-us.html">
                                     <h5>About Us</h5>
                                 </a>
                             </li>
@@ -118,7 +125,12 @@
     <!--===== JS files =====-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script>
+        $(".navbar .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
 </body>
 
 </html>
