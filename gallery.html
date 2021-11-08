@@ -54,33 +54,33 @@
     <section class="gallery">
 
       <div class="controls">
-        <span class="video-btn active" data-src="./images/i-1.png"></span>
-        <span class="video-btn" data-src="./images/i-2.png"></span>
-        <span class="video-btn" data-src="./images/i-3.png"></span>
-        <span class="video-btn" data-src="./images/i-4.png"></span>
-        <span class="video-btn" data-src="./images/i-5.png"></span>
-        <span class="video-btn" data-src="./images/i-6.png"></span>
-        <span class="video-btn" data-src="./images/i-7.png"></span>
-        <span class="video-btn" data-src="./images/i-8.png"></span>
-        <span class="video-btn" data-src="./images/i-9.png"></span>
-        <span class="video-btn" data-src="./images/i-10.png"></span>
-        <span class="video-btn" data-src="./images/i-11.png"></span>
+        <span class="img-btn active" data-src="./images/i-1.png"></span>
+        <span class="img-btn" data-src="./images/i-2.png"></span>
+        <span class="img-btn" data-src="./images/i-3.png"></span>
+        <span class="img-btn" data-src="./images/i-4.png"></span>
+        <span class="img-btn" data-src="./images/i-5.png"></span>
+        <span class="img-btn" data-src="./images/i-6.png"></span>
+        <span class="img-btn" data-src="./images/i-7.png"></span>
+        <span class="img-btn" data-src="./images/i-8.png"></span>
+        <span class="img-btn" data-src="./images/i-9.png"></span>
+        <span class="img-btn" data-src="./images/i-10.png"></span>
+        <span class="img-btn" data-src="./images/i-11.png"></span>
       </div>
 
-      <div class="video-container">
-        <img id="video-slider" src="./images/i-1.png">
+      <div class="img-container">
+        <img id="img-slider" src="./images/i-1.png">
       </div>
 
     </section>
     <script>
-      let videoBtn = document.querySelectorAll(".video-btn");
+      let imgBtn = document.querySelectorAll(".img-btn");
 
-      videoBtn.forEach(btn =>{
+      imgBtn.forEach(btn =>{
         btn.addEventListener('click', ()=>{
           document.querySelector(".controls .active").classList.remove("active");
           btn.classList.add("active");
           let src = btn.getAttribute('data-src');
-          document.querySelector("#video-slider").src = src;
+          document.querySelector("#img-slider").src = src;
         });
       });
       var swiper = new Swiper(".review-slider", {
