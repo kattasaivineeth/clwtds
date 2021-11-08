@@ -392,20 +392,41 @@ gallery section style
 
 .gallery{
     background-color: tomato;
-    width: 100%;
-    margin-top: 80px;
-    padding-top: 2rem;
-    height: 100vh;
+    padding: 2rem 9%;
+    min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	position: relative;
+	z-index: 0;
 }
-.carousel {
-    margin: 0 20rem;
-    position: relative;
-    width: 800px;
+.video-container img{
+    margin-top: 7.5rem;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: -1;
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
 }
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.controls{
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 5rem;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: relative;
+	top: 10rem;
+}
+.controls .video-btn{
+	width: 2rem; height: 2rem;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 .15rem;
+}
+.controls .active{
+	background-color: black2;
 }
 
 /* .about-us {
