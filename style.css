@@ -297,10 +297,13 @@ speaker section
     /* border: #c3e40a 2px solid; */
 }
 .speaker-heading {
+    width: 100%;
     background-color: #D42C70CF;
+    /* border: #c3e40a 2px solid; */
 }
 
 .speaker-box {
+    width: 100%;
     /* border: #aeb90f 2px solid; */
     padding: 0rem 1rem;
     margin-bottom: 1rem;
@@ -322,7 +325,7 @@ speaker section
 
 .speaker .app .speaker-img {
     width: 12rem;
-    /* border: #0e0d0d solid 2px; */
+    /* border: #dbb819 solid 2px; */
 }
 .speaker .app .speaker-img img {
     width: 100%;
@@ -355,7 +358,6 @@ speaker section
 /*image overlay*/
 
 .parent {
-    /* border: 4px solid #ff0000; */
     max-width: 500px;
     margin: 0 auto;
 }
