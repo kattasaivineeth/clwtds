@@ -1,3 +1,134 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href=""><img src="https://i.pinimg.com/originals/4b/a0/04/4ba0045e70fefbccb1babe1b8f920db3.jpg" alt=""></a>
+            </div>
+
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn" >
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+
+            <div class="navigation">
+
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./appre.html">
+                    <li>Appreciations</li>
+                </a>
+                <a href="./poster.html">
+                    <li>Poster</li>
+                </a>
+
+                <a href="./speaker.html">
+                    <li>Speakers</li>
+                </a>
+
+                <a href="./appre.html#free-register">
+                    <li>Free Register</li>
+                </a>
+                <a href="./appre.html#about-dr-singh">
+                    <li>More About Dr. T. D. Singh</li>
+                </a>
+                <a href="./gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="./about-us.html">
+                    <li>About Us</li>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="gallery">
+
+      <div class="controls">
+        <span class="img-btn active" data-src="./images/i-1.png"></span>
+        <span class="img-btn" data-src="./images/i-2.png"></span>
+        <span class="img-btn" data-src="./images/i-3.png"></span>
+        <span class="img-btn" data-src="./images/i-4.png"></span>
+        <span class="img-btn" data-src="./images/i-5.png"></span>
+        <span class="img-btn" data-src="./images/i-6.png"></span>
+        <span class="img-btn" data-src="./images/i-7.png"></span>
+        <span class="img-btn" data-src="./images/i-8.png"></span>
+        <span class="img-btn" data-src="./images/i-9.png"></span>
+        <span class="img-btn" data-src="./images/i-10.png"></span>
+        <span class="img-btn" data-src="./images/i-11.png"></span>
+      </div>
+
+      <div class="img-container">
+        <img id="img-slider" src="./images/i-1.png">
+      </div>
+
+    </section>
+    <script>
+      let imgBtn = document.querySelectorAll(".img-btn");
+
+      imgBtn.forEach(btn =>{
+        btn.addEventListener('click', ()=>{
+          document.querySelector(".controls .active").classList.remove("active");
+          btn.classList.add("active");
+          let src = btn.getAttribute('data-src');
+          document.querySelector("#img-slider").src = src;
+        });
+      });
+      var swiper = new Swiper(".review-slider", {
+        spaceBetween: 20,
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+        },
+      });
+
+      var swiper = new Swiper(".brand-slider", {
+        spaceBetween: 20,
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            450: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            991: {
+              slidesPerView: 4,
+            },
+            1200: {
+              slidesPerView: 5,
+            },
+        },
+      });
+    </script>
+  </body>
+=======
 <!doctype html>
 <html lang="en">
   <head>
