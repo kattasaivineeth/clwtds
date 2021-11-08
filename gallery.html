@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -127,4 +128,194 @@
       });
     </script>
   </body>
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--===== Requird meta tags =====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="site.webmanifest">
+
+    <!--===== Icon =====-->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!--===== Title Tag =====-->
+    <title>CLWTDS-2021</title>
+
+    <!--===== CSS file link =====-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--===== Bootstrap CSS links =====-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+
+
+    <!--===== Navigation bar =====-->
+    <header>
+      <nav>
+          <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #3A001D;">
+              <div class="container-lg">
+                  <a class="navbar-brand text-center" target="_blank" href="https://drive.google.com/file/d/1CzF462C1I-XRlQgkVIlVhRAYlGM1me8q/view">
+                      <img src="images/logo.jpg" height="auto" class="d-inline-block align-top" id = "logo" alt="BI">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse" id="navbarColor03">
+                      <ul class="navbar-nav text-center ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="index.html">
+                                  <h5> Home </h5>
+                                  <span class="sr-only">(current)</span>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./appre.html">
+                                  <h5>Appreciations</h5>
+                              </a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle">
+                                  <h5 class="d-inline">Program</h5>
+                              </a>
+                              <div class="dropdown-menu text-center py-0" aria-labelledby="navbarDropdown">
+                                  <a href="poster.html" class="dropdown-item">
+                                      <h5 class="my-1">Poster</h5>
+                                  </a>
+                                  <a href="speaker.html" class="dropdown-item">
+                                      <h5 class="my-1">Speaker</h5>
+                                  </a>
+                              </div>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./appre.html#free-register">
+                                  <h5>Free Register</h5>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./appre.html#about-dr-singh">
+                                  <h5>More about Dr. T. D. Singh</h5>
+                              </a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="gallery.html">
+                                  <h5>Gallery</h5>
+                                  <span class="sr-only">(current)</span>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="about-us.html">
+                                  <h5>About Us</h5>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </nav>
+  </header>
+  <!--===== End Navigation bar =====-->
+
+  <!--===== Gallery section =====-->
+  <section class="gallery">
+
+    <div class="controls">
+      <span class="img-btn active" data-src="./images/i-1.png"></span>
+      <span class="img-btn" data-src="./images/i-2.png"></span>
+      <span class="img-btn" data-src="./images/i-3.png"></span>
+      <span class="img-btn" data-src="./images/i-4.png"></span>
+      <span class="img-btn" data-src="./images/i-5.png"></span>
+      <span class="img-btn" data-src="./images/i-6.png"></span>
+      <span class="img-btn" data-src="./images/i-7.png"></span>
+      <span class="img-btn" data-src="./images/i-8.png"></span>
+      <span class="img-btn" data-src="./images/i-9.png"></span>
+      <span class="img-btn" data-src="./images/i-10.png"></span>
+      <span class="img-btn" data-src="./images/i-11.png"></span>
+    </div>
+    <div class="img-container">
+      <img id="img-slider" src="./images/i-1.png">
+    </div>
+  </section>
+  <!--===== End Gallery section =====-->
+
+  <!--===== JS files =====-->
+  <script src="./js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+  <!--===== Navigation bar script =====-->
+  <script>
+      $(".navbar .nav-link").on("click", function(){
+          $(".nav").find(".active").removeClass("active");
+          $(this).addClass("active");
+      });
+  </script>
+
+  <!--===== Gallery script =====-->
+  <script>
+    let imgBtn = document.querySelectorAll(".img-btn");
+
+    imgBtn.forEach(btn =>{
+      btn.addEventListener('click', ()=>{
+        document.querySelector(".controls .active").classList.remove("active");
+        btn.classList.add("active");
+        let src = btn.getAttribute('data-src');
+        document.querySelector("#img-slider").src = src;
+      });
+    });
+    var swiper = new Swiper(".review-slider", {
+      spaceBetween: 20,
+      loop:true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+      },
+      breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+      },
+    });
+
+    var swiper = new Swiper(".brand-slider", {
+      spaceBetween: 20,
+      loop:true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+      },
+      breakpoints: {
+          450: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          991: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 5,
+          },
+      },
+    });
+  </script>
+
+</body>
+
 </html>

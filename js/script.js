@@ -5,7 +5,6 @@ const seeMoreBtn0 = document.querySelector(".see-more-0");
 moreContent0.style.display = "none";
 seeMoreBtn0.addEventListener('click', () => {
      
-    // moreContent.classList.seeMoreBtn('see-more0');
     if(seeMoreBtn0.innerHTML === 'see more') {
         seeMoreBtn0.innerHTML = 'see less'; 
         moreContent0.style.display = "inline";       
@@ -22,7 +21,6 @@ const seeMoreBtn1 = document.querySelector(".see-more-1");
 moreContent1.style.display = "none";
 seeMoreBtn1.addEventListener('click', () => {
      
-    // moreContent.classList.seeMoreBtn('see-more1');
     if(seeMoreBtn1.innerHTML === 'see more') {
         seeMoreBtn1.innerHTML = 'see less'; 
         moreContent1.style.display = "inline";       
@@ -39,7 +37,6 @@ const seeMoreBtn2 = document.querySelector(".see-more-2");
 moreContent2.style.display = "none";
 seeMoreBtn2.addEventListener('click', () => {
      
-    // moreContent.classList.seeMoreBtn('see-more2');
     if(seeMoreBtn2.innerHTML === 'see more') {
         seeMoreBtn2.innerHTML = 'see less'; 
         moreContent2.style.display = "inline";       
@@ -56,7 +53,6 @@ const seeMoreBtn3 = document.querySelector(".see-more-3");
 moreContent3.style.display = "none";
 seeMoreBtn3.addEventListener('click', () => {
      
-    // moreContent.classList.seeMoreBtn('see-more3');
     if(seeMoreBtn3.innerHTML === 'see more') {
         seeMoreBtn3.innerHTML = 'see less'; 
         moreContent3.style.display = "inline";       
