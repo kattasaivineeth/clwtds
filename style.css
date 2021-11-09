@@ -384,6 +384,21 @@ gallery section style
 .swiper-wrapper img{
     width: 50%;
 } 
+.swiper-slide p{
+    margin-top: 12px;
+    font-size: large;
+    font-weight: bold;
+}
+@media (max-width: 1030px){
+    .swiper-wrapper img{
+        width: 75%;
+    } 
+}
+@media (max-width: 659px){
+    .swiper-wrapper img{
+        width: 85%;
+    } 
+}
 /*
 
 speaker section
