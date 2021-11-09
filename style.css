@@ -17,9 +17,6 @@ ul {
     list-style-position: outside;
 }
 
-ul li{
-    padding: 5px;
-}
 .dropdown-item {
     color: #05142F !important;
 }
