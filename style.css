@@ -288,11 +288,6 @@ appreciations section style
     padding: 2rem;
 }
 
-@media (max-width:500px) {
-    .appreciations .appreciations-box {
-        padding: 0rem 1rem;
-    }   
-} 
 
 /* 
 
