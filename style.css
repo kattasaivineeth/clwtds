@@ -158,9 +158,7 @@ home intro section style
     .intro .home-msg{
         bottom: -14rem;
     }
-    .intro .home-msg h1{
-
-    }
+    
 }
 @media (max-width:614px){
     .intro .home-msg{
@@ -376,45 +374,13 @@ gallery section style
 
 */
 
-.gallery{
-    background-color: tomato;
-    padding: 2rem 9%;
-    min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-flow: column;
-	position: relative;
-	z-index: 0;
+.swiper {
+    width: 600px;
+    height: 300px;
 }
-.img-container img{
-    margin-top: 7.5rem;
-	position: absolute;
-	top: 0; left: 0;
-	z-index: -1;
-	width: 50%;
-	height: 50%;
-	object-fit: cover;
-}
-.controls{
-	margin: 1rem;
-	padding: 1rem;
-	border-radius: 5rem;
-	background-color: rgba(0, 0, 0, 0.7);
-	position: relative;
-	top: 10rem;
-}
-.controls .img-btn{
-	width: 2rem; height: 2rem;
-	display: inline-block;
-	background-color: #fff;
-	border-radius: 50%;
-	margin: 0 .15rem;
-}
-.controls .active{
-	background-color: black;
-}
-
+.swiper-wrapper img{
+    width: 50%;
+} 
 /*
 
 speaker section
