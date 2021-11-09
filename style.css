@@ -201,83 +201,70 @@ home section style
 
 }
 
-/* 
+/***************
 
 appreciations section style
 
-*/
+*****************/
 
 
 
 .appreciations {
+    font-family: sans-serif;
+    font-size: 1.52rem;
     width: 100%;
-    margin-top: 80px;
-    padding-top: 2rem;
-    background: linear-gradient(#e66465, #91e5e5);
+    /* border: 2px solid rgb(219, 184, 25); */
+    /* background-color: #3A001D; */
 
 }
-
-.appreciations .up-btn {
-    display: block;
-    position: fixed;
-    width: 100%;
-    top: 85%;
-    left: 90%;
+.appreciations button {
+    border: none;
+    background: none;
+    color: white;
+}
+.appreciations h1 {
+   
+    background-color: #e0598f;
     padding: 2rem;
-    /* border: 2px red solid; */
-}
-
-.appreciations .up-btn a {
-    text-decoration: none;
-    background-color: aqua;
-    padding: 1rem;
-    border-radius: 15px;
-
 
 }
-.appreciations .btn-up {
-    font-size: 25px;
+.appreciations .appreciations-box {
+    padding: 0rem 1rem;
 }
+.appreciations .box-1 {
+    border: #c0ae0c 2px solid;
 
-.appreciations .app {
-    border: 2px solid black;
-    width: 100%;
+    border-radius: 10px;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-}
-.appreciations .app .app-1, .appreciations .app .app-2, .appreciations .app .app-3 {
-    width: 30%;
-    /* border: 2px solid black; */
-
-}
-.appreciations .app .app-pic {
-    width: 80%;
-    /* height: 5rem; */
-    /* border: #3A001D solid 3px; */
-}
-.appreciations .app .app-pic img{
-    width: 100%;
-    height: 12rem;
-}
-
-
-.appreciations .app img {
-    padding: 1rem;
-    width: 100%;
+    flex-wrap: wrap;
+    background-color: #3A001D;
+    color: #FE3486;
+    margin-bottom: 20px;
 } 
-
-@media (max-width:900px) {
-
-    .appreciations .app {
-        flex-direction: column;
-    }
-    .appreciations .app .app-1, .appreciations .app .app-2, .appreciations .app .app-3 {
-        width: 70%;
-    }
+.appreciations .app-pic {
+    width: 30vh;
+    height: 30vh;
+    /* border: #00a1c4 4px solid; */
+    /* border-radius: 30px; */
 }
+.appreciations .app-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.appreciations .box-1 .para {
+    padding: 2rem;
+}
+
+@media (max-width:500px) {
+    .appreciations .appreciations-box {
+        padding: 0rem 1rem;
+    }   
+} 
 
 /* 
 
@@ -516,11 +503,9 @@ speaker section
 
 
 
-/* 
-
-about-us section style
-
-*/
+/*********
+    about-us section style
+**********/
 
 .about-us h1 {
     padding: 2rem;
