@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
 
 <body class="min-vh-100 d-flex flex-column">
 
@@ -33,7 +35,7 @@
           <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #3A001D;">
               <div class="container-lg">
                   <a class="navbar-brand text-center" target="_blank" href="https://drive.google.com/file/d/1CzF462C1I-XRlQgkVIlVhRAYlGM1me8q/view">
-                      <img src="images/logo.jpg" height="auto" class="d-inline-block align-top" id = "logo" alt="BI">
+                      <img src="images/logo.png" height="auto" class="d-inline-block align-top" id = "logo" alt="BI">
                   </a>
                   <a class="navbar-brand text-center" target="_blank" href="http://binstitute.org" style="color: #FE3486;">
                     <h4 class="mb-0" id="site-title">CLWTDS-2021</h4>
@@ -99,25 +101,62 @@
   <!--===== End Navigation bar =====-->
   
   <!--===== Gallery section =====-->
-  <section class="gallery">
 
-    <div class="controls">
-      <span class="img-btn active" data-src="./images/i-1.png"></span>
-      <span class="img-btn" data-src="./images/i-2.png"></span>
-      <span class="img-btn" data-src="./images/i-3.png"></span>
-      <span class="img-btn" data-src="./images/i-4.png"></span>
-      <span class="img-btn" data-src="./images/i-5.png"></span>
-      <span class="img-btn" data-src="./images/i-6.png"></span>
-      <span class="img-btn" data-src="./images/i-7.png"></span>
-      <span class="img-btn" data-src="./images/i-8.png"></span>
-      <span class="img-btn" data-src="./images/i-9.png"></span>
-      <span class="img-btn" data-src="./images/i-10.png"></span>
-      <span class="img-btn" data-src="./images/i-11.png"></span>
+   
+  <div class="swiper">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <img src="./images/i-1.png">
+          <p>Symposium, Celebrating “Life and Works of Dr. T. D. Singh”</p>
+        </div>
+      <div class="swiper-slide">
+          <img src="./images/i-2.png">
+          <p>Dr. T. D. Singh with different Religious Leaders</p>
+        </div>
+      <div class="swiper-slide">
+          <img src="./images/i-3.png">
+          <p>Dr. T. D. Singh Cultural Contributions glimpses</p>
+        </div>
+      <div class="swiper-slide">
+          <img src="./images/i-4.png">
+          <p>Outreach Programs</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-5.png">
+          <p>Friendly Interactions/Dialogues</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-6.png">
+          <p>Science-Spirituality Presentations</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-7.png">
+          <p>Science and Religion Presentations</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-8.png">
+          <p>Interactions</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-9.png">
+          <p>Dr. T. D. Singh imprinting Works</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-10.png">
+          <p>Time Management</p>
+      </div>
+      <div class="swiper-slide">
+          <img src="./images/i-11.png">
+          <p>Student Interaction</p>
+      </div>
     </div>
-    <div class="img-container">
-      <img id="img-slider" src="./images/i-1.png">
-    </div>
-  </section>
+
+    
+    <div class="swiper-button-prev btn"></div>
+    <div class="swiper-button-next btn"></div>
+  
+  </div>
   <!--===== End Gallery section =====-->
 
   <!--===== JS files =====-->
@@ -125,7 +164,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
   </script>
-
+  <!-- SWIPER JS -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  
   <!--===== Navigation bar script =====-->
   <script>
       $(".navbar .nav-link").on("click", function(){
@@ -136,56 +177,13 @@
 
   <!--===== Gallery script =====-->
   <script>
-    let imgBtn = document.querySelectorAll(".img-btn");
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
 
-    imgBtn.forEach(btn =>{
-      btn.addEventListener('click', ()=>{
-        document.querySelector(".controls .active").classList.remove("active");
-        btn.classList.add("active");
-        let src = btn.getAttribute('data-src');
-        document.querySelector("#img-slider").src = src;
-      });
-    });
-    var swiper = new Swiper(".review-slider", {
-      spaceBetween: 20,
-      loop:true,
-      autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-      },
-      breakpoints: {
-          640: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-      },
-    });
-
-    var swiper = new Swiper(".brand-slider", {
-      spaceBetween: 20,
-      loop:true,
-      autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-      },
-      breakpoints: {
-          450: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          991: {
-            slidesPerView: 4,
-          },
-          1200: {
-            slidesPerView: 5,
-          },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   </script>
