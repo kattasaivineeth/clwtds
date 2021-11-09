@@ -260,8 +260,6 @@ appreciations section style
     padding: 0rem 1rem;
 }
 .appreciations .box-1 {
-    border: #c0ae0c 2px solid;
-
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -276,8 +274,6 @@ appreciations section style
 .appreciations .app-pic {
     width: 30vh;
     height: 30vh;
-    /* border: #00a1c4 4px solid; */
-    /* border-radius: 30px; */
 }
 .appreciations .app-pic img {
     width: 100%;
@@ -381,11 +377,12 @@ gallery section style
         width: 85%;
     } 
 }
-/*
+
+/******
 
 speaker section
 
-*/
+******/
 
 
 .speaker h1 {
@@ -442,11 +439,6 @@ speaker section
 }
 
 .speaker .app .speaker-bio button {
-    /* color: #5e0000;
-    color: #fcff24;
-    color: #00a1c4;
-    color: #c30040; */
-
     color: #e2e3f0;
     border: none;
     background: none;
