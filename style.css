@@ -395,7 +395,8 @@ speaker section
 .speaker h1 {
     width: 100%;
     padding: 2rem;
-    /* border: #c3e40a 2px solid; */
+    text-align: center;
+    /* border: #08a9f3 2px solid; */
 }
 .speaker-heading {
     width: 100%;
