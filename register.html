@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!--===== Requird meta tags =====-->
     <meta charset="UTF-8">
@@ -13,24 +12,21 @@
     <link rel="icon" href="images/favicon.ico">
 
     <!--===== Title Tag =====-->
-    <title class="title">Poster</title>
-    
+    <title>CLWTDS-2021</title>
+
     <!--===== CSS file link =====-->
     <link rel="stylesheet" href="style.css">
-
-    <!--===== CSS links =====-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-    <!-- Bootstrap CSS -->
+    
+    <!--===== Bootstrap CSS links =====-->
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
-
 <body class="min-vh-100 d-flex flex-column">
-
-    <!--===== Navigation bar =====-->
-    <header>
+     <!--===== Navigation bar =====-->
+     <header>
         <nav>
             <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #3A001D;">
                 <div class="container-lg">
@@ -46,9 +42,10 @@
             
                     <div class="collapse navbar-collapse" id="navbarColor03">
                         <ul class="navbar-nav text-center ml-auto">
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="index.html">
                                     <h5> Home </h5>
+                                    <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -56,10 +53,9 @@
                                     <h5>Appreciations</h5>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown active">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle">
                                     <h5 class="d-inline">Program</h5>
-                                    <span class="sr-only">(current)</span>
                                 </a>
                                 <div class="dropdown-menu text-center py-0" aria-labelledby="navbarDropdown">
                                     <a href="poster.html" class="dropdown-item">
@@ -99,44 +95,28 @@
         </nav>
     </header>
     <!--===== End Navigation bar =====-->
-    
-    <!--===== Poster section =====-->
-    <section class="poster" id="poster">
-        <div id="banner">
-            <div class="container-lg py-4 text-center">
-                <h1 class="py-2">
-                    <i class="bi-file-earmark-image"></i>
-                    Poster
-                </h1>
-            </div>
+
+        <!--===== Start Free Registration =====-->
+    <section class="free-register" id="free-register">
+        <div class="heading">Free Register</div>
+        <div class="form">
+            <iframe src="https://forms.gle/DgizBQkQ34K7var98" frameborder="0" ></iframe>
         </div>
 
-        <main class="container-lg px-0 flex-grow-1">
-            <div class="m-4">
-                <div class="d-flex flex-wrap justify-content-center my-2">
-                    <a href="images/pic-5.png" type="button" class="btn btn-outline-info m-2" download>
-                        <h5 class="text-center my-1"><i class="bi-download"></i>&ensp;Download Poster SQ(1.0MB)</h5>
-                    </a>
-                    <a href="images/pic-5.png" type="button" class="btn btn-outline-info m-2" download>
-                        <h5 class="text-center my-1"><i class="bi-download"></i>&ensp;Download Poster HQ(3.0MB)</h5>
-                    </a>
-                </div>
-                <figure class="text-center">
-                    <img src="images/pic-5.png" alt="Poster" style="width: 95%; max-width: 720px;">
-                </figure>
-            </div>
-        </main>
     </section>
+            <!--===== End Free Registration =====-->
 
-    <!--===== JS files =====-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script>
-        $(".navbar .nav-link").on("click", function(){
-            $(".nav").find(".active").removeClass("active");
-            $(this).addClass("active");
-        });
-    </script>
+        <!--===== JS files =====-->
+        <script src="./js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script>
+            $(".navbar .nav-link").on("click", function(){
+                $(".nav").find(".active").removeClass("active");
+                $(this).addClass("active");
+            });
+        </script>
+
+
 </body>
-
 </html>
