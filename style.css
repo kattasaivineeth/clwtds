@@ -370,7 +370,8 @@ gallery section style
 */
 
 .swiper {
-    margin-top: 5.1rem;
+    margin: 6.1rem 0;
+    padding-bottom: 6.1rem;
     width: 90%;
     height: 60%;
     text-align: center;
@@ -383,14 +384,29 @@ gallery section style
     font-size: large;
     font-weight: bold;
 }
+.swiper-button-prev, .swiper-button-next{
+    padding: 18px !important;
+    color: black !important;
+    font-size: 2px !important;
+}
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: red !important;
+}
 @media (max-width: 1030px){
     .swiper-wrapper img{
         width: 75%;
     } 
+    .swiper-button-prev, .swiper-button-next{
+        top: 92% !important;
+    }
 }
 @media (max-width: 659px){
+    .swiper{
+        width: 100%;
+    }
     .swiper-wrapper img{
-        width: 85%;
+        width: 95%;
+        height: 50%;
     } 
 }
 
@@ -525,6 +541,10 @@ speaker section
 
 .about-us h1 {
     padding: 2rem;
+}
+.about-us .table{
+    background-color: #3A001D !important;
+    color: #f1f1f1 !important;
 }
 
 /* 
