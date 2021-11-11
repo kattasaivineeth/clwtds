@@ -296,8 +296,9 @@ poster section style
 
 /* Poster CSS */
 #banner {
-    background: radial-gradient(rgba(177, 2, 72, 0.85), rgba(177, 2, 72, 0.5)), url('./banner.png');
+    /* background: radial-gradient(rgba(177, 2, 72, 0.85), rgba(177, 2, 72, 0.5)), url('./banner.png'); */
     background-repeat: no-repeat;
+    background-color: #C89D7C;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
