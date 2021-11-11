@@ -26,12 +26,12 @@ ul {
 }
 
 .nav-link {
-    color: #D42C70cf !important;
+    color: #dab515 !important;
 }
 
 .nav-link:hover,
 .active>.nav-link {
-    color: #FE3486 !important;
+    color: #fcff24 !important;
 }
 
 a{
