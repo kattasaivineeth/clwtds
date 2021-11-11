@@ -252,7 +252,10 @@ appreciations section style
 }
 .appreciations h1 {
    
-    background-color: #e0598f;
+    background-color: #C89D7C;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.8rem;
     padding: 2rem;
 
 }
@@ -335,10 +338,14 @@ free-register section style
 
 .free-register .heading {
     width: 100%;
-    background-color: #e0598f;
+    background-color: #C89D7C;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.8rem;
     padding: 1.5rem;
     text-align: center;
-    border: #05142F 2px solid;
+
+    /* border: #05142F 2px solid; */
 }
 .form{
     width: 100%;
@@ -425,7 +432,10 @@ speaker section
 }
 .speaker-heading {
     width: 100%;
-    background-color: #D42C70CF;
+    background-color: #C89D7C;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.8rem;
     /* border: #c3e40a 2px solid; */
 }
 
