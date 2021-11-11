@@ -35,9 +35,9 @@ ul {
 }
 
 a{
+
     text-align: justify;
 }
-
 /* logo CSS */
 #logo {
     width: 57.5px;
@@ -251,10 +251,11 @@ appreciations section style
     color: white;
 }
 .appreciations h1 {
-   
+    margin-top:10px ;
     background-color: #C89D7C;
     font-family: sans-serif;
-    color: white;
+    color: #fcff24;
+    font-weight: bold;
     font-size: 1.8rem;
     padding: 2rem;
 
@@ -270,8 +271,8 @@ appreciations section style
     align-items: center;
     padding: 2rem;
     flex-wrap: wrap;
-    background-color: #3A001D;
-    color: #FE3486;
+    background-color: #C89D7C;
+    color: #fcff24;
     margin-bottom: 20px;
 } 
 .appreciations .app-pic {
@@ -299,10 +300,11 @@ poster section style
     /* background: radial-gradient(rgba(177, 2, 72, 0.85), rgba(177, 2, 72, 0.5)), url('./banner.png'); */
     background-repeat: no-repeat;
     background-color: #C89D7C;
+    margin-top: 10px;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    color: #ffffff;
+    color: #fcff24;
 }
 
 ::-webkit-scrollbar {
@@ -339,9 +341,11 @@ free-register section style
 
 .free-register .heading {
     width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
     background-color: #C89D7C;
     font-family: sans-serif;
-    color: white;
+    color: #fcff24;
     font-size: 1.8rem;
     padding: 1.5rem;
     text-align: center;
@@ -433,10 +437,14 @@ speaker section
 }
 .speaker-heading {
     width: 100%;
+    margin-top:10px ;
     background-color: #C89D7C;
     font-family: sans-serif;
-    color: white;
+    color: #fcff24;
+    font-weight: bold;
     font-size: 1.8rem;
+    /* margin: 0 10px; */
+    
     /* border: #c3e40a 2px solid; */
 }
 
@@ -450,8 +458,8 @@ speaker section
 .speaker .app {
     padding: 1rem;
     border-radius: 20px;
-    background-color: #3A001D ;
-    color: #e0598f;
+    background-color: #C89D7C ;
+    color: #fcff24;
     width: 100%;
     font-size: 1.2rem;
     display: flex;
