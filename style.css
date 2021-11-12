@@ -180,9 +180,9 @@ home section style
 
 */
 
-home {
+.home {
     /* border: 2px red solid; */
-    margin: 0 5rem;
+    margin: 5rem;
 }
 
 .home .bio-pic {
