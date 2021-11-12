@@ -180,10 +180,9 @@ home section style
 
 */
 
-.home {
+home {
     /* border: 2px red solid; */
-    
-    padding: 2rem;
+    margin: 0 5rem;
 }
 
 .home .bio-pic {
@@ -200,7 +199,23 @@ home section style
     width: 90%;
 } 
 
-.home .work .work-heading h1 {
+.home-sec-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.work-img1{
+    flex: 1 1 40rem;
+    width: 980px;
+}
+.work-img1 img{
+    width: 70%;
+    border-radius: 10px;
+}
+.work-content1, .work-content2, .work-content3, .work-content4, .extra{
+    flex: 1 1 40rem;
+}
+.work-heading h1 {
     text-align: center;
 }
 
@@ -218,6 +233,9 @@ home section style
 .home .work-content1 ol, .work-content2 ol, .work-content3 ol, .work-content4 ol{
     /* border: 2px black solid; */
     padding: 2rem;
+    margin-top: 2rem;
+    
+    width: 600px;
    
 }
 .home .work-content1 ol li, .work-content2 ol li, .work-content3 ol li, .work-content4 ol li {
