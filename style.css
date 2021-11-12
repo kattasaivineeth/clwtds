@@ -182,14 +182,14 @@ home section style
 
 .home {
     /* border: 2px red solid; */
-    margin: 5rem;
+    margin: 5rem 1rem;
 }
 
 .home .bio-pic {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:center ;
+    justify-content:center;
     padding: 2rem;
     /* border: 2px red solid; */
 }
@@ -203,17 +203,18 @@ home section style
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 1.5rem;
 }
 .work-img1{
-    flex: 1 1 40rem;
+    flex: 1 1 28rem;
     width: 980px;
 }
 .work-img1 img{
-    width: 70%;
+    width: 77%;
     border-radius: 10px;
 }
 .work-content1, .work-content2, .work-content3, .work-content4, .extra{
-    flex: 1 1 40rem;
+    flex: 1 1 22rem;
 }
 .work-heading h1 {
     text-align: center;
@@ -232,10 +233,8 @@ home section style
 }
 .home .work-content1 ol, .work-content2 ol, .work-content3 ol, .work-content4 ol{
     /* border: 2px black solid; */
-    padding: 2rem;
+   
     margin-top: 2rem;
-    
-    width: 600px;
    
 }
 .home .work-content1 ol li, .work-content2 ol li, .work-content3 ol li, .work-content4 ol li {
@@ -246,8 +245,10 @@ home section style
     padding: 1rem;
 
 }
-
-/***************
+ /* @media (max-width: 768px) {
+ 
+} */
+************** */
 
 appreciations section style
 
