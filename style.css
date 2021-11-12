@@ -271,7 +271,7 @@ appreciations section style
     align-items: center;
     padding: 2rem;
     flex-wrap: wrap;
-    background-color: #C89D7C;
+    background-color: #5e0000;
     color: #fcff24;
     margin-bottom: 20px;
 } 
@@ -458,7 +458,7 @@ speaker section
 .speaker .app {
     padding: 1rem;
     border-radius: 20px;
-    background-color: #C89D7C ;
+    background-color: #5e0000 ;
     color: #fcff24;
     width: 100%;
     font-size: 1.2rem;
