@@ -580,3 +580,35 @@ td {
     
     padding: 1rem;
 }
+
+/* 
+
+INFORMATION SECTION STYLE
+
+*/
+.info{
+    margin: 2rem 3rem;
+    padding: 2rem;
+    background-color: #3A001D;
+    color: white;
+}
+.home-sec-1 h2{
+    text-decoration: underline;
+    text-align: center;
+}
+.see-more-0, .see-more-1, .see-more-2, .see-more-3{
+    background-color:rgba(0, 0, 0, 0.523);
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+    color: whitesmoke;
+}
+.see-more-0:hover, .see-more-1:hover, .see-more-2:hover, .see-more-3:hover{
+    background-color: rgb(17, 19, 18);
+}
+@media (max-width:500px){
+    .info{
+        margin: 2rem 0rem;
+        padding: 1rem 1.5rem;
+    }
+}
