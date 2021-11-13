@@ -182,7 +182,7 @@ home section style
 
 .home {
     /* border: 2px red solid; */
-    margin: 5rem 1rem;
+    margin: 5rem;
 }
 
 .home .bio-pic {
@@ -193,57 +193,29 @@ home section style
     padding: 2rem;
     /* border: 2px red solid; */
 }
-
-.home img {
-    margin-top: 80px;
-    width: 90%;
-} 
-
-.home-sec-1{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.5rem;
+.home h5{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .work-img1{
     flex: 1 1 28rem;
     width: 980px;
 }
-.work-img1 img{
+.home img{
+    margin-top: 80px;
     width: 77%;
+    height: 350px;
+    object-fit: contain;
     border-radius: 10px;
 }
-.work-content1, .work-content2, .work-content3, .work-content4, .extra{
-    flex: 1 1 22rem;
-}
-.work-heading h1 {
-    text-align: center;
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    padding: 10px;
+    background-color: rgb(124, 111, 111) !important;
 }
 
-.home .work .work-heading p{
-    padding: 2rem 2rem 0rem 2rem;
-    font-size: 17px;
-    /* border: 2px red solid; */
-}
-
-.home .work .work-heading h2 {
-    font-weight: 200;
-    padding: 0rem 1rem;
-    text-decoration: underline;
-}
-.home .work-content1 ol, .work-content2 ol, .work-content3 ol, .work-content4 ol{
-    /* border: 2px black solid; */
-   
-    margin-top: 2rem;
-   
-}
-.home .work-content1 ol li, .work-content2 ol li, .work-content3 ol li, .work-content4 ol li {
-    padding: 0.5rem;
-}
-
-.home .work-content4 .extra h3{
-    padding: 1rem;
-
+@media (max-width:968px) {
+    .home{
+        margin: 1rem;
+    }
 }
  /* @media (max-width: 768px) {
  
