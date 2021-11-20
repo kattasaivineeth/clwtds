@@ -217,9 +217,14 @@ home section style
         margin: 1rem;
     }
 }
- /* @media (max-width: 768px) {
- 
-} */
+@media (max-width:574px) {
+    .top{
+        margin-top: -6rem;
+    }
+    .bottom{
+        padding-bottom: 3rem;
+    }
+}
 ************** */
 
 appreciations section style
